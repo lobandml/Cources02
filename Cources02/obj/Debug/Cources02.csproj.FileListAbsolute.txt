@@ -8,3 +8,8 @@ C:\Users\Oleg\Documents\4git\Cources02\Cources02\obj\Debug\Cources02.pdb
 C:\Users\Oleg\Documents\4git\Cources02\Cources02\bin\Debug\Cources02.exe
 C:\Users\Oleg\Documents\4git\Cources02\Cources02\bin\Debug\Cources02.pdb
 C:\Users\Oleg\Documents\4git\Cources02\Cources02\obj\Debug\Cources02.csprojResolveAssemblyReference.cache
+C:\Users\Oleg\Documents\Cources02\Cources02\obj\Debug\Cources02.exe
+C:\Users\Oleg\Documents\Cources02\Cources02\obj\Debug\Cources02.pdb
+C:\Users\Oleg\Documents\Cources02\Cources02\obj\Debug\Cources02.csprojResolveAssemblyReference.cache
+C:\Users\Oleg\Documents\Cources02\Cources02\bin\Debug\Cources02.exe
+C:\Users\Oleg\Documents\Cources02\Cources02\bin\Debug\Cources02.pdb

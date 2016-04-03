@@ -11,21 +11,53 @@ namespace Cources02
        private double eurcource;
        private double rubcource;
 
+       enum MType
+       {
+           UAH,
+           USD,
+           EUR,
+           RUB
+       }
+
+       private MType RetType(string input)
+       {
+           MType result;
+           switch (input.ToLower())
+           {
+               case "uah":
+                    result = MType.UAH;
+                    break;
+                case "usd":
+                    result = MType.USD;
+                    break;
+                case "eur":
+                    result = MType.EUR;
+                    break;
+                case "rub":
+                    result = MType.RUB;
+                    break;
+                default:
+                    throw new Exception("Некорректное название валюты");
+                    break;
+           }
+           return result;
+       }
+
         public double ToUAH(string type, double count)
         {
             double result = 0;
-            switch (type.ToLower())
+            switch (RetType(type))
             {
-                case "uah":
+                case MType.UAH:
                     result = count;
                     break;
-                case "usd":
+                case MType.USD:
                     result = count * usdcource;
                     break;
-                case "eur":
+                case MType.EUR:
                     result = count * eurcource;
                     break;
-                case "rub":
+                case MType.RUB:
                     result = count * rubcource;
                     break;
                 default:
@@ -38,18 +70,18 @@ namespace Cources02
         public double ToAnother(string type, double uahcount)
         {
             double result = 0;
-            switch (type.ToLower())
+            switch (RetType(type))
             {
-                case "uah":
+                case MType.UAH:
                     result = uahcount;
                     break;
-                case "usd":
+                case MType.USD:
                     result = uahcount / usdcource;
                     break;
-                case "eur":
+                case MType.EUR:
                     result = uahcount / eurcource;
                     break;
-                case "rub":
+                case MType.RUB:
                     result = uahcount / rubcource;
                     break;
                 default:
